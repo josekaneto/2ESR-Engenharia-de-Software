@@ -1,0 +1,2 @@
+public class ex16 {
+}
