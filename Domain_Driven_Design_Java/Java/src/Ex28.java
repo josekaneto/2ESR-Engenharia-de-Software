@@ -33,7 +33,7 @@ public class Ex28 {
             if(v < menorValor){
                 menorValor = v;
             }
-            
+
             media = soma / 10;
         }
 

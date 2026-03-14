@@ -17,7 +17,7 @@ public class Ex27 {
 
         for (int i = 1; i<=N; i++){
             resultado = ((double) i / (i+1));
-            System.out.println(resultado);
+            System.out.printf("%d / %d = %.2f\n", i, (i+1), resultado);
             soma += resultado;
         }
 
