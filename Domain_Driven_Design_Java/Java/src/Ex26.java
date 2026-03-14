@@ -6,7 +6,7 @@ public class Ex26 {
 
         double N,  soma = 0, somaTotal=0;
 
-        System.out.println("Digite um numero: ");
+        System.out.print("Digite um numero: ");
         N = sc.nextInt();
 
         while (N < 0 || N > 100){
