@@ -1,4 +1,4 @@
-package POO;
+package POO.ex34;
 
 import java.util.Scanner;
 
