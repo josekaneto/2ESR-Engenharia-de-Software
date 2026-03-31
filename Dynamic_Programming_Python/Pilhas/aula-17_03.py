@@ -1,4 +1,5 @@
 import random
+from idlelib.colorizer import prog_group_name_to_tag
 from random import randint
 
 # stack = []
@@ -36,8 +37,6 @@ from random import randint
 #
 # # is_empty
 # len(stack) == 0
-from multiprocessing.connection import arbitrary_address
-from zipapp import create_archive
 
 
 # Exercício 1 Criar uma função que recebe uma string e usa uma pilha para inverter o conteúdo da string
@@ -68,11 +67,11 @@ def palindrome(string):
         resultado += pilha.pop()
 
     if resultado == string_lower:
-        return "Palíndromo"
+        return "Palíndromo", resultado
     else:
-        return "Não é um Palíndromo"
+        return "Não é um Palíndromo", resultado
 
-print(palindrome("Amor A Roma"))
+print(palindrome("Amor a Roma"))
 
 # Exercício 3
 
@@ -89,6 +88,22 @@ def sequencia_de_comandos(lista):
     return pilha
 
 print(sequencia_de_comandos(lista))
+
+# Exercicio 4
+
+def pares_adjacentes(string):
+    pilha = []
+
+    for char in string:
+        if pilha and pilha[-1] == char:
+            pilha.pop()  # remove o par
+        else:
+            pilha.append(char)  # adiciona na pilha
+
+    return pilha
+
+print(pares_adjacentes("abbaca"))
+
 
 
 
